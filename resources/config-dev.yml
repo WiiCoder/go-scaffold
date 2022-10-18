@@ -1,0 +1,19 @@
+server:
+  port: 8888
+  name: roicloud-youshu
+
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  db:
+  auth:
+    username: root
+    password: fshing
+
+elastic:
+  host: http://43.142.154.57
+  post: 9200
+  auth:
+    username: elastic
+    password: fshing
+

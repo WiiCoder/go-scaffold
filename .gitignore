@@ -1,0 +1,34 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Folders
+_obj
+_test
+
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
+
+_testmain.go
+
+*.exe
+
+.envrc
+
+/.vscode/
+/.idea/
+/data
+/debug.test
+/generator
+/cluster-test/cluster-test
+/cluster-test/*.log
+/cluster-test/es-chaos-monkey
+/dist
+/go.sum
+/spec
+/tmp
+/CHANGELOG-3.0.html
