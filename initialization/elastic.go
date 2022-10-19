@@ -7,7 +7,7 @@ import (
 
 	"github.com/olivere/elastic/v7"
 
-	"github.com/wiiCoder/roicloud-youshu/server/global"
+	"github.com/wiiCoder/go-scaffold/global"
 )
 
 func Elastic() {

@@ -2,7 +2,7 @@ package global
 
 import (
 	"github.com/olivere/elastic/v7"
-	"github.com/wiiCoder/roicloud-youshu/server/config"
+	"github.com/wiiCoder/go-scaffold/config"
 	"go.uber.org/zap"
 	"gorm.io/gorm"
 )

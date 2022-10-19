@@ -3,7 +3,7 @@ package initialization
 import (
 	"fmt"
 
-	"github.com/wiiCoder/roicloud-youshu/server/global"
+	"github.com/wiiCoder/go-scaffold/global"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
@@ -11,13 +11,14 @@ import (
 
 func Mysql() {
 	dsn := fmt.Sprintf(
-		"%s:%s@tcp(%s:%d)/%s?charset=utf8mb4&parseTime=True&loc=Asia/Shanghai",
+		"%s:%s@tcp(%s:%d)/%s?charset=utf8mb4&parseTime=True&loc=Local",
 		global.Config.MysqlConfig.Auth.Username,
 		global.Config.MysqlConfig.Auth.Password,
 		global.Config.MysqlConfig.Host,
 		global.Config.MysqlConfig.Port,
 		global.Config.MysqlConfig.Ds,
 	)
+	fmt.Println(dsn)
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
 		panic(err)

@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/spf13/viper"
-	"github.com/wiiCoder/roicloud-youshu/server/config"
-	"github.com/wiiCoder/roicloud-youshu/server/global"
+	"github.com/wiiCoder/go-scaffold/config"
+	"github.com/wiiCoder/go-scaffold/global"
 )
 
 func GetEnvInfo(env string) bool {
