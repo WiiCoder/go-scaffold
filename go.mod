@@ -4,8 +4,10 @@ go 1.19
 
 require (
 	github.com/olivere/elastic/v7 v7.0.32
+	github.com/sirupsen/logrus v1.9.0
 	github.com/spf13/viper v1.13.0
 	go.uber.org/zap v1.23.0
+	gopkg.in/tucnak/telebot.v2 v2.5.0
 	gorm.io/driver/mysql v1.4.3
 	gorm.io/gorm v1.24.0
 )
@@ -30,7 +32,7 @@ require (
 	github.com/subosito/gotenv v1.4.1 // indirect
 	go.uber.org/atomic v1.10.0 // indirect
 	go.uber.org/multierr v1.8.0 // indirect
-	golang.org/x/sys v0.0.0-20220520151302-bc2c85ada10a // indirect
+	golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
