@@ -17,3 +17,7 @@ elastic:
     username: elastic
     password: fshing
 
+telegram:
+  api: https://api.telegram.org
+  token: 2138454577:AAG7DRXBkEJNjzsmjXl2F_neTum9f8Ajxvk
+  proxy: http://127.0.0.1:7890

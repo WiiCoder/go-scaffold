@@ -26,9 +26,17 @@ type EsConfig struct {
 	Auth AuthConfig `mapstructure:"auth"` // 认证信息
 }
 
+// TelegramConfig tg配置
+type TelegramConfig struct {
+	Api   string `mapstructure:"api"`
+	Token string `mapstructure:"token"`
+	Proxy string `mapstructure:"proxy"`
+}
+
 // ServerConfig 根配置
 type ServerConfig struct {
-	Base        BaseConfig  `mapstructure:"server"`
-	EsConfig    EsConfig    `mapstructure:"elastic"`
-	MysqlConfig MysqlConfig `mapstructure:"mysql"`
+	Base        BaseConfig     `mapstructure:"server"`
+	EsConfig    EsConfig       `mapstructure:"elastic"`
+	MysqlConfig MysqlConfig    `mapstructure:"mysql"`
+	TgConfig    TelegramConfig `mapstructure:"telegram"`
 }
