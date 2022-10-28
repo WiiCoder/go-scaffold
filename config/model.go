@@ -33,10 +33,18 @@ type TelegramConfig struct {
 	Proxy string `mapstructure:"proxy"`
 }
 
+type RedisConfig struct {
+	Host     string `mapstructure:"host"`
+	Post     int    `mapstructure:"post"`
+	Password string `mapstructure:"password"`
+	DB       int    `mapstructure:"db"`
+}
+
 // ServerConfig 根配置
 type ServerConfig struct {
 	Base        BaseConfig     `mapstructure:"server"`
 	EsConfig    EsConfig       `mapstructure:"elastic"`
 	MysqlConfig MysqlConfig    `mapstructure:"mysql"`
 	TgConfig    TelegramConfig `mapstructure:"telegram"`
+	RedisConfig RedisConfig    `mapstructure:"redis"`
 }

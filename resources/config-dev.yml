@@ -9,6 +9,11 @@ mysql:
   auth:
     username: root
     password: fshing
+redis:
+  host: 127.0.0.1
+  post: 6379
+  password: fshing
+  db: 0
 
 elastic:
   host: http://43.142.154.57

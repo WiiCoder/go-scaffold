@@ -1,6 +1,7 @@
 package global
 
 import (
+	"github.com/go-redis/redis"
 	"github.com/olivere/elastic/v7"
 	"github.com/wiiCoder/go-scaffold/config"
 	"go.uber.org/zap"
@@ -14,4 +15,5 @@ var (
 	EsClient *elastic.Client
 	Db       *gorm.DB
 	TgBot    *telebot.Bot
+	Rd       *redis.Client
 )
